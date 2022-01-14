@@ -35,7 +35,6 @@
     // Check if we found a string
     if(isset($out[1][0])){
         $string = "Result is: ";
-        echo "<hr>"; // Line seperation
         // Loop the out array
         foreach($out[1] as $key=>$value){
             // Concatenate the values seperated by spaces

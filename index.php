@@ -9,7 +9,7 @@ if (isset($_GET['ajax'])){
 
     include ("ajax.php");
 
-// if not we show the home page
+// If not we show the home page
 }else{
 
     include("home.php");

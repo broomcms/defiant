@@ -51,22 +51,26 @@ You can also upload the files with (*) in the project files description to your 
     // Retreive all string that starts with [ and ends with ]
     preg_match_all("|\[(.*)\]|U","$txt",$out, PREG_PATTERN_ORDER);
 
-    (
-        [0] => Array
-            (
-                [0] => [I]
-                [1] => [can]
-                [2] => [do]
-                [3] => [this]
-            )
-        [1] => Array
-            (
-                [0] => I
-                [1] => can
-                [2] => do
-                [3] => this
-            )
-    )
+    /**
+     * Result is: 
+     * (
+     *   [0] => Array
+     *       (
+     *           [0] => [I]
+     *           [1] => [can]
+     *           [2] => [do]
+     *           [3] => [this]
+     *       )
+     *   [1] => Array
+     *       (
+     *           [0] => I
+     *           [1] => can
+     *           [2] => do
+     *           [3] => this
+     *       )
+     *
+     * )
+     */
 
 In a real-life situation, a programmer could then loop the results of the array in order to use the values like this:
 
@@ -122,7 +126,7 @@ And that will output
  - Created a project flow and file description
  - Explained how to reproduce the solution and how it works
 
-# What i think about this test?
+# What I think about this test?
 
 I had a lot of fun doing this. I was not sure if the test was about printing the words to the server console or printing them to the browser console. Considering it takes a little bit more setup to print it to the browser console, I opted for the more complex of the 2. I would suggest adding "browser console" or "server console" to the test description in order to make it less ambiguous. Other than that, it was fun to do. You can follow the commits and see the state of the project as it comes together. I probably over did it a bit to be honest, but I really wanted you to see how motivated I am for this job :-)
 

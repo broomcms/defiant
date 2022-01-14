@@ -14,6 +14,8 @@ In order to test the above code, you can use the docker box I created for this p
 You can than visit:
 localhost:1000
 
+![image](https://user-images.githubusercontent.com/63425041/149439833-b8c5e58b-95cc-4b12-b49f-4473c0be7114.png)
+
 The docker setup is composed of 2 containers in a defiant network. One for the nginx server and one for the php8 setup.
 
 ## Results

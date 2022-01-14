@@ -41,6 +41,12 @@ You can also upload the files with (*) in the project files description to your 
 
 ![image](https://user-images.githubusercontent.com/63425041/149439833-b8c5e58b-95cc-4b12-b49f-4473c0be7114.png)
 
+    // Retreive the text content
+    $txt = file_get_contents('text.txt');
+
+    // Retreive all string that starts with [ and ends with ]
+    preg_match_all("|\[(.*)\]|U","$txt",$out, PREG_PATTERN_ORDER);
+
 ## Results
 
     (

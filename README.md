@@ -1,5 +1,6 @@
 # Defiant test
 
+
 Write a few lines of PHP that will read the contents of a file, use a regular expression to find all occurrences of text in square brackets, and print that text to the console. You can use lorem ipsum as your input text and insert your own occurrences of square brackets in the sample text. Please provide a link to a repository.
 ## Test Case
 
@@ -17,6 +18,7 @@ The docker setup is composed of 2 containers in a defiant network. One for the n
 
 ## Results
 
+
     (
         [0] => Array
             (
@@ -26,23 +28,36 @@ The docker setup is composed of 2 containers in a defiant network. One for the n
                 [3] => [this]
             )
 
+
     )
 
-In a real life situation, a programmer could then loop the results od the array in order to use the values like this:
+
+In a real-life situation, a programmer could then loop the results of the array in order to use the values like this:
+
 
     // Check if we found a string
     if(isset($out[1][0])){
         $string = "Result is: ";
-        echo "<hr>"; // Line seperation
+        echo "<hr>"; // Line separation
         // Loop the out array
         foreach($out[1] as $key=>$value){
-            // Concatenate the values seperated by spaces
+            // Concatenate the values separated by spaces
             $string .= $value." ";
         }
         // Echo the string minus 1 character to remove the extra space
         echo "<b>".substr($string, 0, -1)."</b>";
     }
 
+
 And that will output
 
     Result is: I can do this
+
+## Auto project review
+
+
+ - Added docker to the project to showcase that I can create a local environment
+ - Added bootstrap to the project to show that I understand how responsiveness works
+ - Used jQuery and Ajax request to output the result to the console
+ - Added HTML to the output to output the result in the page
+ - Stripped HTML from output for console

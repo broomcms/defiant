@@ -40,7 +40,6 @@ In a real-life situation, a programmer could then loop the results of the array 
     // Check if we found a string
     if(isset($out[1][0])){
         $string = "Result is: ";
-        echo "<hr>"; // Line separation
         // Loop the out array
         foreach($out[1] as $key=>$value){
             // Concatenate the values separated by spaces

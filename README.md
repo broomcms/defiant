@@ -31,16 +31,18 @@ The docker setup is composed of 2 containers in a defiant network. One for the n
 In a real life situation, a programmer could then loop the results od the array in order to use the values like this:
 
     // Check if we found a string
-    if(isset($out[0][0])){
+    if(isset($out[1][0])){
+        $string = "Result is: ";
+        echo "<hr>"; // Line seperation
         // Loop the out array
-        foreach($out[0] as $key=>$value){
-            // Concatenate the values separated by spaces
+        foreach($out[1] as $key=>$value){
+            // Concatenate the values seperated by spaces
             $string .= $value." ";
         }
         // Echo the string minus 1 character to remove the extra space
-        echo "<b>".substr($string, 0, 1)."</b>";
+        echo "<b>".substr($string, 0, -1)."</b>";
     }
 
 And that will output
 
-    I can do this
+    Result is: I can do this

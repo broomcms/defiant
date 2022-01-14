@@ -64,15 +64,15 @@ And that will output
 
  ## Important project files
 
- 📦phpdocker                  | The folder that contains help files for building the docker environment
- ┣ 📂nginx                    | Folder for the server container
- ┃ ┗ 📜nginx.conf             | nginx setup
- ┗ 📂php-fpm                  | Folder for the PHP container
- ┃ ┣ 📜Dockerfile             | Server initial commands to run on install
- ┃ ┗ 📜php-ini-overrides.ini  | Extra PHP ini overrides
- 📜ajax.php                   | Retreives the words inclosed in square brakets and outputs them
- 📜docker-compose.yml         | Main docker setup file (Used to create containers)
- 📜home.php                   | Boostrap page used for the project frontend
- 📜index.php                  | Project router
- 📜README.md                  | Project readme for Github
- 📜text.txt                   | Lorem ipsum text that we parse in ajax.php
+    📦phpdocker                  | The folder that contains help files for building the docker environment
+    ┣ 📂nginx                    | Folder for the server container
+    ┃ ┗ 📜nginx.conf             | nginx setup
+    ┗ 📂php-fpm                  | Folder for the PHP container
+    ┃ ┣ 📜Dockerfile             | Server initial commands to run on install
+    ┃ ┗ 📜php-ini-overrides.ini  | Extra PHP ini overrides
+    📜ajax.php                   | Retreives the words inclosed in square brakets and outputs them
+    📜docker-compose.yml         | Main docker setup file (Used to create containers)
+    📜home.php                   | Boostrap page used for the project frontend
+    📜index.php                  | Project router
+    📜README.md                  | Project readme for Github
+    📜text.txt                   | Lorem ipsum text that we parse in ajax.php
